@@ -19,7 +19,7 @@ Android 睡觉提醒。每天到本地设定时间时检查屏幕是否处于可
 
 ## 原生鸿蒙版
 
-[HarmonyOS 6.0+ 适配源码和构建说明](harmonyos/README.md)。日常提醒使用系统日历通知，应用内可预览半屏样式。
+[HarmonyOS 6.0+ 原生工程和构建说明](harmonyos/README.md)。在 DevEco Studio 打开 `harmonyos` 目录。日常提醒使用系统日历通知，应用内可预览半屏样式。
 
 ## 真机验证清单
 

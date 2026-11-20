@@ -1,0 +1,10 @@
+/.hvigor/
+/.ohpm/
+/oh_modules/
+/entry/oh_modules/
+/local.properties
+*.p12
+*.pfx
+*.cer
+*.csr
+*.p7b

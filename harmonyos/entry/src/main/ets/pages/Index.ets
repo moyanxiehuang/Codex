@@ -37,10 +37,6 @@ struct Index {
         startTime: next.getTime(),
         endTime: next.getTime() + 10 * 60 * 1000,
         reminderTime: [0],
-        recurrenceRule: {
-          recurrenceFrequency: calendarManager.RecurrenceFrequency.DAILY,
-          interval: 1
-        },
         description: '先放下手机，早点休息。'
       };
       const context = this.getUIContext().getHostContext() as common.UIAbilityContext;
@@ -65,7 +61,7 @@ struct Index {
             .fontSize(36)
             .fontWeight(FontWeight.Bold)
             .fontColor('#202640')
-          Text('每天 ' + this.selectedTime() + ' 提醒')
+          Text('提醒时间 ' + this.selectedTime())
             .fontSize(19)
             .fontColor('#202640')
           TimePicker({ selected: new Date(2000, 0, 1, this.hour, this.minute) })
@@ -82,7 +78,7 @@ struct Index {
             .onClick(() => {
               this.openCalendarEditor();
             })
-          Text('保存前请确认「每天重复」和「活动开始时提醒」。若已有提醒，请到日历修改原日程，避免重复。')
+          Text('打开日历后，将重复设为「每天」，并确认在活动开始时提醒。已有提醒可在日历里编辑。')
             .fontColor('#414965')
           Text('鸿蒙版由系统日历推送通知，锁屏时也可能收到。')
             .fontColor('#414965')
